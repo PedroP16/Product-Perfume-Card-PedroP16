@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,13 +19,12 @@
 
   <body>
     <!-- Product (Perfume) Card -->
-    <div class="product_card">
-
+    <main class="product_card">
       <!-- Column 1 -->
-      <div class="col-1">
-        <img class="product__img_desktop" src="images/image-product-desktop.jpg" alt="Picture of the Perfume">
-        <img class="product__img_mobile" src="images/image-product-desktop.jpg" alt="Picture of the Perfume">
-      </div>
+        <picture class="col-1">
+          <source srcset="images/image-product-mobile.jpg" media="(max-width: 600px)">
+          <img class="product__img_desktop" src="images/image-product-desktop.jpg" alt="Picture of the Perfume">
+      </picture>
 
       <!-- Column 2 -->
       <div class="col-2">
@@ -56,6 +55,6 @@
           >Add to Cart
         </button>
       </div>
-    </div>
+    </main>
   </body>
 </html>
